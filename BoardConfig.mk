@@ -97,9 +97,6 @@ BOARD_KERNEL_CMDLINE += swiotlb=2048
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
-TARGET_KERNEL_HEADERS := kernel/xiaomi/fog
-TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
 
 # Metadata
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
