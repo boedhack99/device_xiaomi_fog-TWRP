@@ -123,6 +123,8 @@ TW_BUILD_VERSION := Build by CHINEDU 09039121780
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 
+# Torch
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
 
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
