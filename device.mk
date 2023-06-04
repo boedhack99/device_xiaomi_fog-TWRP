@@ -119,9 +119,6 @@ TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
 TW_FRAMERATE := 60
 TW_BUILD_VERSION := Build by CHINEDU 09039121780
-#Properties
-TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 
 # Torch
 PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
