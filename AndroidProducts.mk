@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_fog.mk
+    $(LOCAL_DIR)/omni_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_fog-user \
-    twrp_fog-userdebug \
-    twrp_fog-eng
+    omni_fog-user \
+    omni_fog-userdebug \
+    omni_fog-eng
