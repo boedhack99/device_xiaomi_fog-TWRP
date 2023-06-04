@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/fog/device.mk)
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Product Specifics
-PRODUCT_NAME := twrp_fog
+PRODUCT_NAME := omni_fog
 PRODUCT_DEVICE := fog
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 10C
