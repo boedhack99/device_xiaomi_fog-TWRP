@@ -118,7 +118,13 @@ TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
 TW_FRAMERATE := 60
+<<<<<<< HEAD
+TW_BUILD_VERSION := Build by CHINEDU 09039121780 uttah
+
+#Properties
+=======
 TW_BUILD_VERSION := Build by CHINEDU 09039121780
+>>>>>>> a775653643df08b145629c462aad796b93ad1a35
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
     
@@ -137,3 +143,10 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/libqtivibratoreffect.so
 
 ENABLE_VIRTUAL_AB := true
+
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+# PB Torch
+PB_TORCH_PATH := "/proc/qcom_flash"
+PB_TORCH_MAX_BRIGHTNESS := 1
