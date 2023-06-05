@@ -143,6 +143,5 @@ ENABLE_VIRTUAL_AB := true
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
-# PB Torch
-PB_TORCH_PATH := "/proc/qcom_flash"
-PB_TORCH_MAX_BRIGHTNESS := 1
+
+
