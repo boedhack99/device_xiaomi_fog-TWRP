@@ -45,8 +45,6 @@ AB_OTA_PARTITIONS += \
  BOARD_BOOTIMG_HEADER_VERSION := 3
  BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
  BOARD_KERNEL_IMAGE_NAME := Image
- TARGET_KERNEL_CONFIG := fog_defconfig
- TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
                
 # Kernel - prebuilt
  TARGET_FORCE_PREBUILT_KERNEL := true
