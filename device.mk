@@ -138,6 +138,7 @@ SHRP_EXPRESS := true
 SHRP_EXPRESS_USE_DATA := true
 SHRP_DARK := true
 SHRP_NOTCH := true
+SHRP_AB := true
 
 #SHRP Addons
 SHRP_SKIP_DEFAULT_ADDON_1 := true
