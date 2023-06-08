@@ -98,8 +98,6 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/fog
 
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_CONFIG := fog_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
 
 # Metadata
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
