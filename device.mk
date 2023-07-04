@@ -101,29 +101,74 @@ TARGET_RECOVERY_DEVICE_MODULES += libion vendor.display.config@1.0 vendor.displa
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
-TW_USE_TOOLBOX := true
-TW_INCLUDE_RESETPROP := true
-TW_INCLUDE_REPACKTOOLS := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 1200
-TW_Y_OFFSET := 71
-TW_H_OFFSET := -71
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
+TW_Y_OFFSET := 0
+TW_H_OFFSET := -35
 TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
-TW_FRAMERATE := 60
+TW_SUPPORT_INPUT_1_2_HAPTICS := true
+TW_PREPARE_DATA_MEDIA_EARLY := true
+TW_BACKUP_EXCLUSIONS := /data/fonts
 
-#Properties
-TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
+TW_CUSTOM_CLOCK_POS := left
+TW_CUSTOM_CPU_POS := 350
 
+#SHRP-specific lines
+SHRP_PATH := device/xiaomi/fog
+SHRP_MAINTAINER := Chinedu 2349039121780
+SHRP_DEVICE_CODE := fog
+SHRP_EDL_MODE := 1
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /sdcard1
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FLASH_MAX_BRIGHTNESS := 255
+SHRP_FONP_1 := /sys/devices/virtual/torch/torch/torch_level
+SHRP_REC_TYPE := SAR
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_DEVICE_TYPE := A/B
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_DARK := true
+SHRP_NOTCH := true
+SHRP_AB := true
 
+#SHRP Addons
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+SHRP_SKIP_DEFAULT_ADDON_2 := true
+SHRP_SKIP_DEFAULT_ADDON_3 := true
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+INC_IN_REC_MAGISK := true
+SHRP_EXTERNAL_ADDON_PATH := $(DEVICE_PATH)/addons/
+SHRP_EXTERNAL_ADDON_1_NAME := "Mount Super as RW"
+SHRP_EXTERNAL_ADDON_1_INFO := "This will mount your system partitions as RW"
+SHRP_EXTERNAL_ADDON_1_FILENAME := mountrw.zip
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := Mount
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := Mounted
+SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
+SHRP_EXTERNAL_ADDON_2_NAME := dynDFE
+SHRP_EXTERNAL_ADDON_2_INFO := "This will disable force encryption of your device."
+SHRP_EXTERNAL_ADDON_2_FILENAME := dynDFE.zip
+SHRP_EXTERNAL_ADDON_2_BTN_TEXT := Disable
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := Disabled
+SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
+
+# The path to a temperature sensor
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone19/temp"
+
+# TWRP Debug Flags
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
+
+TW_BUILD_VERSION := Build by CHINEDU 09039121780 uttah
+    
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 
@@ -139,3 +184,4 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/libqtivibratoreffect.so
 
 ENABLE_VIRTUAL_AB := true
+
